@@ -1,0 +1,28 @@
+#include <gtest/gtest.h>
+#include "functional.h"
+#include "group.hpp"
+
+TEST(test001,test){
+    int a = 5, b = 8;
+    int actual = sum(a,b);
+    int expected = 13;
+    ASSERT_EQ(expected,actual);
+}
+
+TEST(test002,test){
+    int a = 5, b = 8;
+    int actual = sum(a,b);
+    int expected = 22;
+    ASSERT_EQ(expected,actual);
+}
+
+TEST(test003,test){
+    Group g;
+    float a = random_float(2,5);
+}
+int main(int argc, char*argv[]){
+
+    ::testing::InitGoogleTest(&argc, argv);
+    return RUN_ALL_TESTS();
+
+}
