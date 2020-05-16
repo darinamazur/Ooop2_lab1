@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1100</width>
+    <height>450</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1100</width>
+    <height>450</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1100</width>
+    <height>450</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Music Chart</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(235, 235, 235);</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QListWidget" name="songsList">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>300</width>
+      <height>410</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="AddNewSong">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>50</y>
+      <width>89</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Add New</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="DeleteSong">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>80</y>
+      <width>89</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Delete</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="songAlbumName">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>335</y>
+      <width>220</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>//album</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelArtist">
+    <property name="geometry">
+     <rect>
+      <x>321</x>
+      <y>291</y>
+      <width>36</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Artist:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelAlbum">
+    <property name="geometry">
+     <rect>
+      <x>321</x>
+      <y>335</y>
+      <width>49</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Album:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelDate">
+    <property name="geometry">
+     <rect>
+      <x>321</x>
+      <y>380</y>
+      <width>37</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Date:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="songName">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>201</y>
+      <width>220</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>//songName</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="songStars">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>246</y>
+      <width>220</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>//stars</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="songArtistName">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>291</y>
+      <width>220</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>//artistName</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="songReleaseDate">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>380</y>
+      <width>220</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>//releaseDate</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelSong">
+    <property name="geometry">
+     <rect>
+      <x>321</x>
+      <y>201</y>
+      <width>38</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Song:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelRating">
+    <property name="geometry">
+     <rect>
+      <x>321</x>
+      <y>246</y>
+      <width>48</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Rating:</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="SortBy">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>110</y>
+      <width>89</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Sort by</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBox">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>140</y>
+      <width>90</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">selection-background-color: rgb(0, 0, 205);
+selection-color: rgb(255, 255, 255);</string>
+    </property>
+    <item>
+     <property name="text">
+      <string>album</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>rating</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>alphabet</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>none</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QListWidget" name="groupList">
+    <property name="geometry">
+     <rect>
+      <x>790</x>
+      <y>10</y>
+      <width>300</width>
+      <height>170</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>690</x>
+      <y>10</y>
+      <width>90</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Groups:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>10</y>
+      <width>90</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Songs:</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1100</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
